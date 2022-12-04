@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <body>
+        <link href="Styles/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <div class="container">
+
+        <div id="ToDo-list" class="header">
+            <h1>To Do List</h1>
+            
+            <input id="newTask" type="text">
+            <button class="addButton">+</button>
+            <div class="filtered">
+              <button onclick = "ShowAll()" id= "All">All</button>
+              <button onclick = "ShowActive()" id= "Active">Active</button>
+              <button onclick = "ShowCompleted()" id= "Completed">Completed</button>
+            </div>
+
+              <ul  class= "inc-tasks" id="incomplete-tasks"></ul>
+        
+              
+              
+              <div class="footer">
+                <span>You have 9999 pending </span>
+                <button onclick = "deleteCompleted()" id="Clear">Clear Completed</button>
+              </div>
+            
+     </div>
+
+     
+
+    
+
+        
+        <script src="Scripts/script.js"></script>
+    </body>
+</html>
